@@ -20,6 +20,22 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
  *
  **/
 
+//Dichiaro e assegno le variabili Fizz e Buzz
+const printFizz = "Fizz"
+const printBuzz = "Buzz"
+
+//Avvio il ciclo For per numeri che vanno da 1 a 100
 for (let index = 1; index <= 100; index++) {
-    console.log(index);
+
+    //Se un un numero è divisibile sia per 3 che per 5 stampo *FizzBuzz* in console, altimenti se un numero è divisibile solo per 3 stampo *Fizz* in console, altrimenti se un numero è divibile per 5 stampo *Buzz* in console, altrimenti stampo semplicemente il numero //
+    
+    if ((index % 3 === 0) && (index % 5 === 0)){
+        console.warn(printFizz + printBuzz);
+    } else if (index % 3 === 0){
+        console.log(printFizz);
+    } else if (index % 5 === 0){
+        console.error(printBuzz);
+    } else {
+        console.info(index);
+    }
 }
