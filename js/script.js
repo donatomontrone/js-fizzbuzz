@@ -22,5 +22,4 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 
 for (let index = 1; index <= 100; index++) {
     console.log(index);
-    
 }
